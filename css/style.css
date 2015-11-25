@@ -1,0 +1,303 @@
+#search404container {
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 60px;
+	position: relative;
+	background: #ffffff url(../img/bg.jpg) top center repeat-x;
+}
+
+#search404container h1 {
+	font-size: 110px;
+	font-family: "Avenir LT W01 35 Light", Arial, Helvetica, sans-serif;
+  color: #007ac2;
+	margin: 0;
+}
+
+#search404container p {
+	font-size: 20px;
+	font-family: "Avenir LT W01 35 Light", Arial, Helvetica, sans-serif;
+	margin: 20px 0 0 20px;
+	margin: 0;
+  color: #777;
+}
+
+.pin404{
+  float:right;
+  margin-right:30px;	
+}
+
+@media only screen and (max-width: 600px) {
+#search404container {
+    width: 100% !important;
+    text-align: center;
+	 margin-top: 10px;
+}
+
+#search404container h1 {
+	    font-size: 70px;
+}
+
+.pin404{
+  float:none;	
+  margin-right:0;
+}
+}
+
+
+/*animated assets*/
+
+.colorChanger {
+	width: 143px;
+	height: 272px;
+}
+
+.pinShadow img{
+	margin: 35px 0 0 0;
+	width: 143px;
+	height: 42px;
+	float: left;
+	clear: left;
+}
+
+
+#lnkSearch{
+    background-color: transparent;
+    background-image: url('//webapps-cdn.esri.com/Apps/MegaMenu/img/mega-menu-search-btn.png');
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    left: -30px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top:5px;
+ }
+ 
+
+.animated { 
+    -webkit-animation-duration: 3s; 
+    animation-duration: 3s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+
+
+@media only screen and (max-width: 600px) {
+	
+.colorChanger {
+	width: 60px;
+	height: 114px;
+	float:none;
+	margin:0 auto;
+}
+
+.fadeInPin img {
+	width: 60px;
+	height: 114px;
+}
+
+.pinShadow img {
+	width: 100px;
+	height: 36px;
+	float:none;
+	margin:0;
+}
+
+.pinShadow {
+	width:100%;
+	float:left;
+	text-align:center;
+}
+
+
+}
+
+
+/*animations*/
+
+@-webkit-keyframes fadeInPin { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(-40px); 
+	-webkit-transform: rotate(0deg);
+    } 
+    10% { 
+	-webkit-transform: rotate(50deg);
+    } 
+    30% { 
+	-webkit-transform: rotate(-30deg);
+    } 
+    50% { 
+	-webkit-transform: rotate(20deg);
+    } 
+    70% { 
+	-webkit-transform: rotate(-10deg);
+    } 
+    90% { 
+	-webkit-transform: rotate(5deg);
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+	-webkit-transform: rotate(0deg);
+    } 
+} 
+
+@keyframes fadeInPin { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(-40px); 
+	transform: rotate(0deg);
+    } 
+    10% { 
+	transform: rotate(50deg);
+    } 
+    30% { 
+	transform: rotate(-30deg);
+    } 
+    50% { 
+
+	transform: rotate(20deg);
+    } 
+    70% { 
+	transform: rotate(-10deg);
+    } 
+    90% { 
+	transform: rotate(5deg);
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+	transform: rotate(0deg);
+    } 
+} 
+
+.fadeInPin img { 
+    background-color: #c6542d;
+}
+
+.fadeInPin { 
+    -webkit-animation-name: fadeInPin; 
+    animation-name: fadeInPin; 
+}
+
+@-webkit-keyframes fadeInTitle { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateX(40px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(0); 
+    } 
+} 
+
+@keyframes fadeInTitle { 
+    0% { 
+        opacity: 0; 
+        transform: translateX(40px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateX(0); 
+    } 
+} 
+
+.fadeInTitle { 
+    -webkit-animation-name: fadeInTitle; 
+    animation-name: fadeInTitle;
+}
+
+@-webkit-keyframes fadeInMessage { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateX(-40px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(0); 
+    } 
+} 
+
+@keyframes fadeInMessage { 
+    0% { 
+        opacity: 0; 
+        transform: translateX(-40px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateX(0); 
+    } 
+} 
+
+.fadeInMessage { 
+    -webkit-animation-name: fadeInMessage; 
+    animation-name: fadeInMessage;
+}
+
+@-webkit-keyframes fadeInSearch { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(40px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes backToList { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(40px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.backToList { 
+    -webkit-animation-name: backToList; 
+    animation-name: backToList;
+    position: relative;
+    top: 30px;
+    color: #196fa6;
+    padding: 10px;
+    border: 1px solid #196fa6;
+}
+  
+.backToList:hover {
+    background-color: #196fa6;
+    color: #fff;
+    text-decoration: none;
+}  
+
+@-webkit-keyframes fadeInShadowPin { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+
+@keyframes fadeInShadowPin { 
+    0% { 
+        opacity: 0; 
+     
+}
+    100% { 
+        opacity: 1; 
+        
+    } 
+} 
+
+.fadeInShadowPin { 
+    -webkit-animation-name: fadeInShadowPin; 
+    animation-name: fadeInShadowPin;
+}
